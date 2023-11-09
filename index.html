@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f803430887.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+                    <!---<i class="fas fa-times" onclick="closemenu()"></i>--->
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CSE student</p>
+                <h1>Hi, I'm <span>Gangothri</span> <br> from Suryapet....</h1>
+                <img src="images/developer.jpg">
+            </div>
+        </div>
+    </div>
+    <!-----------------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/greenimg.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I'm Gangothri.I am a highly motivated final year Computer Science and Engineering (CSE) student with a passion for technology and a strong desire to make a meaningful impact in the field. Throughout my academic journey, I have developed a solid foundation in computer science concepts and practical skills, which I am eager to apply to real-world problems.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')"">Education</p>
+                            
+                          </div>
+                          <div class=" tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li><span>Python</span>
+                                <div class="progress-bar">
+                                    <div class="Python"><span>90%</span></div>
+                                </div>
+                            </li>
+                            <li><span>DSA</span>
+                                <div class="progress-bar">
+                                    <div class="DSA"><span>85%</span></div>
+                                </div>
+                            </li>
+
+                            <li><span>HTML</span>
+                                <div class="progress-bar">
+                                    <div class="HTML"><span>80%</span></div>
+                                </div>
+                            </li>
+                            <li><span>Javascript</span>
+                            <div class="progress-bar">
+                                <div class="Javascript"><span>85%</span></div>
+                            </div></li>
+                            <li><span>SQL</span>
+                            <div class="progress-bar">
+                                <div class="SQL"><span>80%</span></div>
+                            </div></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech(2020-2024)</span><br>Kakatiya University,Warangal<br>Computer
+                                science<br>8.8CGPA</li>
+                            <li><span>Intermediate(2018-2020)</span><br>Shiridi sai mahila junior
+                                college<br>MPC<br>95%
+                            </li>
+                            <li><span>SSC(2017-2018)</span><br>Vijaya sai high school<br>9.7GPA</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------projects-------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h2>College Event Management<br>(HTML,CSS,Javascript)</h2>
+                    <p>Developing a comprehensive event management system for the college to streamline the
+                        planning, organization, and execution of various campus events.The system aims to enhance
+                        communication, coordination, and engagement among students, faculty, and attendees.
+                    </p>
+                    
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-mask-ventilator"></i>
+                    <h2>weather Forcast<br>(HTML,CSS,Javascript)</h2>
+                    <p>This website developed to provide the weather information for a specific location.
+                        This project is developed using html,css and javascript.this project typically 
+                        revolves around providing accurate and timely information about the weather 
+                        conditions for a specific region
+                    </p>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!---------------------------------------portfolio
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, vel.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>music app</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, vel.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>shopping App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, vel.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>-------------------->
+    <!-------------------------------------------------------------------CONTACT------------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+
+                    <p><img src="images/gmail.png"> <a
+                            href="mailto:nainigangothri11@gmail.com">nainigangothri11@gmail.com</a></p>
+                    <p><img src="images/whatsapp.png"><a href="https://wa.me/919553804405"> 9553894405</a> </p>
+
+                    <div class="social-icons">
+                        <a href="https://instagram.com/"><img src="images/instagram.png"></a>
+                        <a href=""><img src="images/twitter.png"></i></a>
+                        <a href=""><img src="images/linkedin.png"></a>
+                    </div>
+                    <a href="images/gangothri_resume_1.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="=text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright@Gangothri.Made with<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxq7MG7mvtRmZRocSJPeVy1cG6GWDx9WKxNGQVBo7YcTjBkYeWv3kowpXiXgNmCZDZNsQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "submitted successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
